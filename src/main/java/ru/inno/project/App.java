@@ -1,5 +1,7 @@
 package ru.inno.project;
 
+import java.util.Scanner;
+
 /**
  * Клиентский код.
  */
@@ -24,6 +26,9 @@ public class App {
      * @param args аргументы командной строки
      */
     public static void main(String[] args) {
-        printSeveralTimes("Hello, World!", N);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter string:");
+        String string = scanner.nextLine();
+        printSeveralTimes(string, N);
     }
 }
